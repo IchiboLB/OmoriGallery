@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OmoriGallery</string>
+    <string name="button_titlehead">Headspace</string>
+    <string name="button_titlefar">Faraway town</string>
+</resources>
