@@ -7,5 +7,13 @@
     <fragment
         android:id="@+id/startFragment"
         android:name="com.cornbeer.omogallery.startFragment.StartFragment"
-        android:label="StartFragment" />
+        android:label="StartFragment" >
+        <action
+            android:id="@+id/action_startFragment_to_headchoiceFragment"
+            app:destination="@id/headchoiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/headchoiceFragment"
+        android:name="com.cornbeer.omogallery.headchoiceFragment.HeadchoiceFragment"
+        android:label="HeadchoiceFragment" />
 </navigation>

@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.cornbeer.omogallery.R
 
 class StartFragment : Fragment() {
@@ -23,7 +24,8 @@ class StartFragment : Fragment() {
 
         val headspaceButton = view.findViewById<Button>(R.id.headspace)
         headspaceButton.setOnClickListener {
-            println("Dobriden")
+             val navhost = findNavController()
+            navhost.navigate(R.id.action_startFragment_to_headchoiceFragment)
         }
     }
 }
