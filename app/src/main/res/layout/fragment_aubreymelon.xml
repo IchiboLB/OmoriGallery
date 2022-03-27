@@ -6,47 +6,43 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/background2"
+        android:id="@+id/headground"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/battleback_ow_outskirts_1" />
+        app:layout_constraintVertical_bias="0.494"
+        app:srcCompat="@drawable/backgrhs_1" />
 
-    <ImageButton
-        android:id="@+id/aubrey"
+    <ImageView
+        android:id="@+id/aubreymelon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bobri_1" />
+        app:layout_constraintTop_toTopOf="@+id/headground"
+        app:srcCompat="@drawable/bobri_2" />
 
-    <ImageButton
-        android:id="@+id/bros"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <TextView
+        android:id="@+id/note1"
+        android:layout_width="358dp"
+        android:layout_height="146dp"
+        android:text="@string/text_note1"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/background2"
-        app:layout_constraintTop_toBottomOf="@+id/aubrey"
-        app:srcCompat="@drawable/bros_1" />
-
-    <ImageButton
-        android:id="@+id/together"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bros"
-        app:srcCompat="@drawable/mari_1" />
+        app:layout_constraintTop_toBottomOf="@+id/aubreymelon"
+        app:layout_constraintVertical_bias="0.502" />
 
     <ImageButton
-        android:id="@+id/back"
+        android:id="@+id/back2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#00FFFFFF"

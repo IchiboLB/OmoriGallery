@@ -15,5 +15,13 @@
     <fragment
         android:id="@+id/headchoiceFragment"
         android:name="com.cornbeer.omogallery.headchoiceFragment.HeadchoiceFragment"
-        android:label="HeadchoiceFragment" />
+        android:label="HeadchoiceFragment" >
+        <action
+            android:id="@+id/action_headchoiceFragment_to_aubreyFragment"
+            app:destination="@id/aubreyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aubreyFragment"
+        android:name="com.cornbeer.omogallery.aubreyFragment.AubreyFragment"
+        android:label="AubreyFragment" />
 </navigation>
