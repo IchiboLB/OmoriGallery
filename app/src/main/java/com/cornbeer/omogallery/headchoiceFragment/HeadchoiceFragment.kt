@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.cornbeer.omogallery.R
@@ -20,10 +21,13 @@ class HeadchoiceFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val aubreyButton = view.findViewById<Button>(R.id.aubrey)
+        val aubreyButton = view.findViewById<ImageButton>(R.id.aubrey)
         aubreyButton.setOnClickListener {
             val navhost = findNavController()
             navhost.navigate(R.id.action_headchoiceFragment_to_aubreyFragment)
         }
+
+        //val navhost = findNavController()
+        //navhost.popBackStack()
     }
 }
